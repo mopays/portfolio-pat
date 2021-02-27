@@ -1,0 +1,22 @@
+{
+  "name": "html5-wed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap4-toggle": "^3.6.1",
+    "i-am-not-a-robot": "^0.7.2",
+    "jarallax": "^1.12.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  }
+}

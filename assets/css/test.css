@@ -1,0 +1,243 @@
+/* Table Of Content */
+/*
+1. Section Settings
+
+*/
+
+
+/* Section Settings */
+
+html,
+body {
+    height: 100%;
+    
+}
+.bg-alpha {
+    background: rgba(54, 54, 54, 0.5)
+}
+
+
+
+/* Section Carousel */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-inner .active {
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.color-text{
+    color: #fff;
+}
+.carousel-caption {
+    top: 40%;
+}
+
+.backscreen {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.border-short-bottom {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+.border-short-bottom::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    background: #807f7f;
+}
+/* Section Blog */  
+.blog-content{
+    padding: 50px 100px;
+}
+
+
+.btn-group-costom botton{
+    margin-bottom:0.5rem;
+    width: 200px;
+
+}
+.warpper-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.warpper-card-img::after {
+    content: '';
+    padding-top: 250px;
+    display: block;
+    height: 0;
+}
+
+.warpper-card-img img {
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.warpper-card-img img:hover {
+    transform: scale(1.2)
+}
+/* footer */
+.semi-footer{
+    background-color: #2423239c;
+    color: rgb(0, 0, 0);
+}
+.semi-footer a{
+    color:  rgb(0, 0, 0);
+}
+.semi-footer li.active > a{
+    color: #ffff;
+}
+.semi-footer h4{
+    color:  rgb(0, 0, 0);
+    border-bottom:1px solid ;
+    padding:10px 0 ;
+}
+.page-title{
+    position: relative;
+    display: block;
+    padding-top: 250px ;
+    color: #fff;
+    text-align: center;
+    padding-bottom:100px ;
+}
+.embed-responsive-16by9{
+    padding: 1%;
+
+}
+
+/* Section Timeline */
+
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline::before {
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background: #e6e6e6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+li>.timeline-badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #84ba3f;
+    left: 50%;
+    margin-left: -9px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 0 5px rgb(255, 255, 255);
+    top: 15px;
+}
+
+li>.timeline-badge::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 25px;
+    height: 2px;
+    background: #000000;
+}
+
+li.inverted>.timeline-badge::before {
+    right: -32px;
+}
+
+li>.timeline-badge p {
+    width: 200px;
+    margin-top: -9px;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+li.inverted>.timeline-badge p {
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+}
+
+li>.timeline-card {
+    position: relative;
+    width: 46%;
+    float: left;
+    text-align: right;
+    padding: 0 10px;
+}
+
+li.inverted>.timeline-card {
+    float: right;
+    text-align: left;
+}
+
+.timeline>li::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.timeline-arrow {
+    width: 100%;
+    text-align: center;
+    bottom: -70px;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .timeline::before,
+    .timeline-badge {
+        left: 40px !important;
+    }
+    .timeline-badge::before {
+        right: -32px !important;
+    }
+    .timeline-badge p,
+    li.inverted>.timeline-badge p {
+        margin-left: 50px !important;
+        text-align: left;
+        float: left;
+    }
+    li>.timeline-card {
+        width: 100%;
+        text-align: left;
+        padding: 37px 0 0 85px;
+    }
+    .timeline-arrow {
+      text-align: left;
+      left: 0px;
+    }
+    .timeline-arrow > i{
+            margin-left: 32px;
+    }
+    
+}

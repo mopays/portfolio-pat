@@ -1,0 +1,109 @@
+/* Table Of Content */
+
+/*
+1. Section Settings
+2. Section Carousel
+
+*/
+
+
+/* Section Settings */
+
+html,
+body {
+    height: 100%;
+    
+}
+.bg-top{
+    background: rgba(5, 5, 5, 0.5);
+}
+
+
+/* Section Carousel */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-inner .active {
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    top: 40%;
+}
+
+.backscreen {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.border-short-bottom {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px;
+}
+
+.border-short-bottom::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    background: #595959;
+}
+/* Section Blog */
+
+.warpper-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.warpper-card-img::after {
+    content: '';
+    padding-top: 250px;
+    display: block;
+    height: 0;
+}
+
+.warpper-card-img img {
+    position: absolute;
+    top: 0;
+    transition: 1s;
+}
+
+.warpper-card-img img:hover {
+    transform: scale(1.2)
+}
+/* footer */
+.semi-footer{
+    background-color: #424242;
+    color: #fff;
+}
+.semi-footer a{
+    color: #fff;
+}
+.semi-footer h4{
+    color: rgb(0, 0, 0);
+    border-bottom:1px solid ;
+    padding:10px 0 ;
+}
+.page-title{
+    position: relative;
+    display: block;
+    padding-top: 250px ;
+    color: #fff;
+    text-align: center;
+    padding-bottom:100px ;
+}
+.embed-responsive-16by9{
+    padding: 1%;
+
+}
